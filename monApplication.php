@@ -1,5 +1,5 @@
 <?php
-//nom de l'application
+//nom de l'applicatio
 $nameApp = "monApplication";
 
 //action par défaut
