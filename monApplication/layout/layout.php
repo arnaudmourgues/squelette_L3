@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
   <head>
        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    
     <title>
      Appli Arnaud !
@@ -10,6 +11,7 @@
   </head>
 
   <body>
+  <?php echo "<h2 class='w3-red'>Action code : ".$context->getStatus()."</h2>"?>
     <h2>Super c'est ton appli ! </h2>
     <?php if($context->getSessionAttribute('user_id')): ?>
 	<?php echo $context->getSessionAttribute('user_id')." est connecte"; ?>

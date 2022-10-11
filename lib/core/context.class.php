@@ -7,6 +7,7 @@ class context
     const NONE="None";
     private $name;
     private static $instance=null;
+    private $status;
 	
 	 /**
      * @return context
@@ -46,9 +47,11 @@ class context
 	public function executeAction($action,$request)
 	{
 		$this->layout="layout";
-		if(!method_exists('mainController',$action))
-		  return false;
-		
+		if(!method_exists('mainController',$action)) {
+            $this->status = "Error";
+            return false;
+        }
+        $this->status="Success : $action";
 		return  mainController::$action($request,$this);
 		
 	}
@@ -65,6 +68,10 @@ class context
 	{
 		$_SESSION[$attribute]=$value;
 	}
+
+    public function getStatus(){
+        return $this->status;
+    }
     
 	
 	
@@ -80,6 +87,5 @@ class context
     	{
         	$this->data[$prop]=$value;      
     	}
-	
-		
+
 }

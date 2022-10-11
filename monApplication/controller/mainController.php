@@ -9,7 +9,10 @@ class mainController
 		return context::SUCCESS;
 	}
 
-
+    public static function superTest($request, $context){
+        $context->var="j'ai compris $request[param1], super : $request[param2]";
+        return context::SUCCESS;
+    }
 
 	public static function index($request,$context){
 		
