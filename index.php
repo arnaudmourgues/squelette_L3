@@ -1,6 +1,6 @@
 <?php
 //nom de l'application
-$nameApp = "monApplication";
+$nameApp = "index";
 
 //action par défaut
 $action = "index";
