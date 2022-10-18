@@ -9,11 +9,11 @@ class utilisateurTable {
 	{
 		$em = dbconnection::getInstance()->getEntityManager();
 		$UserRepository = $em->getRepository('utilisateur');
+		echo $login.$pass;
 		$user = $UserRepository->findOneBy(array('identifiant' => $login, 'pass' => sha1($pass)));
-	
-		if ($user == false){
-			echo 'Erreur sql';
-				   }
+
+			echo $user->identifiant;
+
 		return $user;
 	}
 

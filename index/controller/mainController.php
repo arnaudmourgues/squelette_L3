@@ -19,5 +19,10 @@ class mainController
 		return context::SUCCESS;
 	}
 
+    public static function login($request, $context){
+        $context->user = utilisateurTable::getUserByLoginAndPass($request['login'], $request['pass']);
+        return context::SUCCESS;
+    }
+
 
 }
