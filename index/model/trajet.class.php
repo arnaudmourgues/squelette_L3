@@ -4,7 +4,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @Entity
- * @Table(name="jabaianb.utilisateur")
+ * @Table(name="jabaianb.trajet")
  */
 class trajet{
 
@@ -21,6 +21,7 @@ class trajet{
 
     /** @Column(type="int") */
     public $distance;
+
 
 
 }

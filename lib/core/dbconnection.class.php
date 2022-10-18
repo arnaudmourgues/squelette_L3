@@ -2,7 +2,7 @@
 
 define ('HOST', 'pedago01c.univ-avignon.fr') ;
 define ('USER', 'uapv2102568'  ) ;
-define ('PASS', 'Vivemarseille26/05' ) ;
+define ('PASS', '2jzQ1m' ) ;
 define ('DB', 'etd' ) ;
 
 use Doctrine\ORM\Tools\Setup;

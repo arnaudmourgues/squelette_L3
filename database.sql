@@ -53,7 +53,7 @@ CREATE TABLE reservation (
  ON UPDATE NO ACTION,
  CONSTRAINT voyage
  FOREIGN KEY (voyage)
- REFERENCES voyage (id )
+ REFERENCES voyage (id)
  ON DELETE NO ACTION
  ON UPDATE NO ACTION);
   
