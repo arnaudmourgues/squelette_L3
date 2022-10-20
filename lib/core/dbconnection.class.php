@@ -32,7 +32,6 @@ private function __construct(){
 //	self::$entityManager = \Doctrine\ORM\EntityManager::create($param, $config);
 	self::$entityManager = EntityManager::create($param, $config);
 
-	echo "is connected : ".self::$entityManager->getConnection()->getDatabase();
 
 }	
 

@@ -48,10 +48,8 @@ class context
 	{
 		$this->layout="layout";
 		if(!method_exists('mainController',$action)) {
-            $this->status = "Error";
             return false;
         }
-        $this->status="Success : $action";
 		return  mainController::$action($request,$this);
 		
 	}

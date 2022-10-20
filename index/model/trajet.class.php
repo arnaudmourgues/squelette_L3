@@ -19,7 +19,7 @@ class trajet{
     /** @Column(type="string", length=25) */
     public $arrivee;
 
-    /** @Column(type="int") */
+    /** @Column(type="integer") */
     public $distance;
 
 
